@@ -1,0 +1,13 @@
+inpt = "mississippi"
+frequency = {} 
+  
+for char in inpt: 
+   if char in frequency: 
+      frequency[char] += 1
+   else: 
+      frequency[char] = 1
+print ("The frequency of alphabets is  '{}':\n {}".format(inpt, str(frequency)))
+
+Output:
+The frequency of alphabets is  'mississippi':
+ {'m': 1, 'i': 4, 's': 4, 'p': 2}
